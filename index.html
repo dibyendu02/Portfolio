@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibyendu Das</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <!-- <h1>Dibyendu Das</h1> -->
+            <nav>
+
+                <img src="images/logo-2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Dibyendu</span> <br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/dibyendu-user.png" id="about-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Brings energy to the room, exploring and learning. I love to solve problems with logical 
+                        thinking, be it coding or maths, listening to music. Academically I am a student of 
+                        Computer Science and Engineering in Coochbehar Government Engineering College. Besides, a 
+                        passionate frontend developer and Competetive Programmer. Trying to make earth a better 
+                        place. Open to opportunities and any new experiences where I can add value and love.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C, C++, Javascript</li>
+                            <li><span>Technical Skills</span><br>Frontend Web Development, UI/UX Design,<br> Data Structures and Algorithm </li>
+                            <li><span>Tools and Frameworks</span><br>HTML, CSS, ReactJs, Bootstarp, VS Code,<br> Figma</li>
+                            <li><span>Non Technical Skills</span><br>Graphic Design, Digital Marketing, Googling,<br> Content Writing</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span></span><br>Developed web apps using HTML,CSS,Js,Bootstrap
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Higher Secondary</span><br>Kalyani University Experimental High School <br>Grade - 91.8%</li>
+                            <li><span>BTech in Computer Science and Engineering</span><br>Coochbehar Government
+                                Engineering College<br>Grade - 9.54 YGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------portfolio--------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/tindog.jpg" alt="">
+                    <div class="layer">
+                        <h3>TinDog</h3>
+                        <p>Tindog is Tinder for Dogs. I made this one page web app using HTML and CSS (Bootstrap)</p>
+                        <a href="https://dibyendu02.github.io/TinDog/" target=”_blank”><i class='fas fa-external-link-alt' style='font-size:24px'></i></a>
+
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/love-calculator.jpg" alt="">
+                    <div class="layer">
+                        <h3>Love Calculator</h3>
+                        <p>Love Calculator takes two names as inputs and returns a random number
+                            generated using Javascript. I have built the UI using HTML and pure CSS.
+                        </p>
+                        <a href="https://dibyendu02.github.io/Love-Calculator-using-JS/" target=”_blank”><i class='fas fa-external-link-alt' style='font-size:24px'></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/drum-kit.jpg" alt="">
+                    <div class="layer">
+                        <h3>Drum Kit</h3>
+                        <p>Drum Kit is an online drum set where you can play drum sound using your keyboard 
+                            or pressing instruments images given on the web app.I have built the UI using HTML and CSS, added 
+                            the sound using Javascript.
+                        </p>
+                        <a href="https://dibyendu02.github.io/Drum-Kit-with-Js/" target=”_blank”><i class='fas fa-external-link-alt' style='font-size:24px'></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <!-- -----------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>  get2dibyendu@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  9641131615</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/dibyendu02/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/dasdibyenduu"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/dibyendu02"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1tJ9FXT3DHXhroBm_6U6fjFHIZBs2t38o/view?usp=sharing" target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form 
+                    id="contact-form"
+                    action="https://formspree.io/f/xrgdgpjn"
+                    method="POST" 
+                    autocomplete="off">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required >
+                        <textarea name="Messege" rows="6" placeholder="Your Messege"></textarea>
+                        <button type="submit" class="btn btn2" onclick="submitForm()">Send</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>All copyrights are reserved by © Dibyendu Das</p>
+        </div>
+    </div>
+
+    <!-- <script src="index.js"></script> -->
+    <script>
+        // js
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+
+        //submit button
+        // function submitForm() {
+        // document.getElementById("contact-form").reset();
+        // }
+
+    </script>
+    <script>
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCmZnB2EliyHulS_D5AjT8RL3_c8pyk8nE",
+            authDomain: "portfolio-1117a.firebaseapp.com",
+            projectId: "portfolio-1117a",
+            storageBucket: "portfolio-1117a.appspot.com",
+            messagingSenderId: "180817790861",
+            appId: "1:180817790861:web:d0047f49daa743d5e69fc4",
+            measurementId: "G-H3HJYWH04K"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <script src="https://kit.fontawesome.com/d69d692d6c.js" crossorigin="anonymous"></script>
+    <script src="mail.js"></script>
+
+</body>
+
+</html>
